@@ -18,8 +18,8 @@ public class WomenPageSteps {
         WomenPage womenPage = new WomenPage(baseTest.getDriver());
 
         SoftAssert sa = new SoftAssert();
-        sa.assertEquals(womenPage.getPageTitle(),txtInPageTitle,"Check that Women page have "+txtInNav+" on its title");
-        sa.assertEquals(womenPage.getCurrentPageInNav(),txtInNav,"Check that Women link leads to a page that contains 'Women' on its navigation tree");
+        sa.assertEquals(womenPage.getPageTitle(),txtInPageTitle,"Check title for Women page:");
+        sa.assertEquals(womenPage.getCurrentPageInNav(),txtInNav,"Check navigation tree text for Women page:");
         sa.assertAll();
     }
 }

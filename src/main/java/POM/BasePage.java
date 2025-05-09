@@ -22,7 +22,7 @@ public class BasePage {
 
     public void waitForBlockingOverlays(){
         List<WebElement> blockingOverlays = Interactor.findElements(driver,overlayBlockers,1);
-        if(blockingOverlays.size() > 0){
+        if(!blockingOverlays.isEmpty()){
             Interactor.waitForBlockingOverlays(driver, blockingOverlays);
         }
     }

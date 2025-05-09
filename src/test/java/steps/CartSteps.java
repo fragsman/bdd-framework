@@ -30,6 +30,6 @@ public class CartSteps {
     @Then("coupon error should display {string}")
     public void coupon_error_should_display(String errorMessage){
         CartPage cartPage = new CartPage(baseTest.getDriver());
-        Assert.assertEquals(cartPage.getCouponErrorResult(),errorMessage,"Check error message due to invalid coupon code");
+        Assert.assertEquals(cartPage.getCouponErrorResult(),errorMessage,"Check error message due to invalid coupon code:");
     }
 }

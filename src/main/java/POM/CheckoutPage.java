@@ -54,7 +54,6 @@ public class CheckoutPage extends BasePage{
 
     public void enterPostalCode(String postalCode){
         driver.findElement(postalCodeInput).sendKeys(postalCode);
-        waitForBlockingOverlays();
     }
 
     public void enterEmail(String email){
@@ -77,7 +76,6 @@ public class CheckoutPage extends BasePage{
         WebElement selectStateSelector = Interactor.findElement(driver,stateSelect);
         selectStateSelector.click();
         Interactor.selectOption(driver,selectStateSelector, stateText);
-        waitForBlockingOverlays();
     }
 
     public void selectNthCountry(int countryPosition){

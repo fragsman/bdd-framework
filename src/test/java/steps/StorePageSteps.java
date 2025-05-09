@@ -16,7 +16,7 @@ public class StorePageSteps {
     @Then("user should see in the search title {string}")
     public void verifySearchTitleShows(String text){
         StorePage storePage = new StorePage(baseTest.getDriver());
-        Assert.assertEquals(storePage.getCurrentPageInNav(),text,"Check that Store link leads to a page that contains '"+text+"' on its navigation tree");
+        Assert.assertEquals(storePage.getCurrentPageInNav(),text,"Check the navigation tree text:");
     }
 
     @Given("user selects the first available product")

@@ -2,18 +2,7 @@
 
 <suite name="TestSuite" verbose="1" >
 
-	<!-- Currently I'm using 2 threads for running tests as the computer I'm testing on is way too slow -->
     <test name="Regression1" >
-    <!--<test name="Regression1" thread-count="2" parallel="classes"> en paralelo ni arrancar-->
-
-		<!-- Groups can be used for example to set up, smoke, functional, regression, etc -->
-		<!--<groups>
-    		<run>
-      			<include name="smoke"/>
-				<include name="regression"/>
-                <include name="non_browser_tests"/>
-          </run>
-        </groups>-->
 
       <classes>
           <class name="runner.TestRunner"/>

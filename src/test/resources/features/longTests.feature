@@ -16,6 +16,7 @@ Feature: Long Selenium Tests for AskOmCdh page
     Given user selects the "Store" link
     And user selects the first available product
     And user adds the product to the cart
+    And user enters to cart details
     When user enters an invalid coupon code "invalid"
     Then coupon error should display "Coupon \"invalid\" does not exist!"
 

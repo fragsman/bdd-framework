@@ -34,6 +34,6 @@ public class CheckoutSteps {
     public void country_selected_in_checkout_should_be(String expectedCountry){
         CheckoutPage checkoutPage = new CheckoutPage(baseTest.getDriver());
         String currentCountry = checkoutPage.getCurrentSelectedCountry();
-        Assert.assertEquals(currentCountry,expectedCountry,"selected country does not match the expected");
+        Assert.assertEquals(currentCountry,expectedCountry,"selected country does not match the expected:");
     }
 }

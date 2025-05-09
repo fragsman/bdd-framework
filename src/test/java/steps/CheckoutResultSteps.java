@@ -23,6 +23,6 @@ public class CheckoutResultSteps {
     @Then("checkout notice should display {string}")
     public void checkout_notice_should_display(String expected) {
         CheckoutResults checkoutResults = new CheckoutResults(baseTest.getDriver());
-        Assert.assertEquals(checkoutResults.getCheckoutNotice(), expected,"Check that checkout message is correct");
+        Assert.assertEquals(checkoutResults.getCheckoutNotice(), expected,"Check that checkout message is correct:");
     }
 }
