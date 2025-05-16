@@ -7,8 +7,8 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"steps", "selenium"}, //in selenium package we have the BaseTest which contains Cucumber Hooks
-        plugin = {"html:target/results/TestReport.html"},
-        //tags = "@non_browser_tests", //filter by tags
+        plugin = {"html:target/results/cucumber-html-report"},
+        tags = TagConfigs.only_smoke,
         monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
