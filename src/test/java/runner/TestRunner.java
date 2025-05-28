@@ -7,10 +7,14 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"steps", "selenium"}, //in selenium package we have the BaseTest which contains Cucumber Hooks
-        plugin = {"html:target/results/cucumber-html-report"},
-        tags = TagConfigs.only_smoke,
+        plugin = {
+                "pretty", //generate beauty output in console
+                "me.jvt.cucumber.report.PrettyReports:target/results/", //generate cucumber-html-reports
+        },
+        tags = TagConfigs.all_but_disabled,
         monochrome = true
 )
+
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override

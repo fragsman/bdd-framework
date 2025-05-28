@@ -8,8 +8,4 @@
           <class name="runner.TestRunner"/>
       </classes>
   </test>
-
-  <listeners>
-      <listener class-name="support.MyTestListener"/>
-  </listeners>
 </suite>
