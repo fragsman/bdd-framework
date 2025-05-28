@@ -7,7 +7,7 @@ This is a Selenium BDD Automation framework just in case I need to use one quick
 - Cucumber
 - MSEdge Web Driver
 - TestNG
-- Extent Reports
+- Cucumber HTML Report
 
 ## Installing this framework 💾
 - Clone the project
@@ -20,7 +20,7 @@ This is a Selenium BDD Automation framework just in case I need to use one quick
 - Here you have two options
 - _Running with Maven:_ Download maven from the apache website. After you install it add adding the `bin` directory with the `mvn` command to the `PATH`. Then from the CMD ot Eclipse terminal run the following command "mvn clean test"
 - _Running with Eclipse:_ Download Eclipse and TestNG plugin. Right click on the testng.xml and select "Run with TestNG".
-- You will see the reports in `/target/results directory`.
+- You will see the reports in `/target/results/cucumber-html-reports directory`.
 
 ## Github Actions ✔️
 - This project is set up for being run on Github Actions. Everytime there is a Pull Request or a Push to the main branch an Action will be run and test will be executed. The report along with the results can be found in the Artifacts inside the run.
