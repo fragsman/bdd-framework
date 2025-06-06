@@ -2,7 +2,10 @@ package POM;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import utils.Interactor;
+import utils.Logger;
 
 public class HeaderBar extends BasePage{
     private final By cartIcon = By.xpath("//div[@id='ast-desktop-header']//div[@class='ast-cart-menu-wrap']");
@@ -13,7 +16,7 @@ public class HeaderBar extends BasePage{
     }
 
     public void enterToCart() {
-        Interactor.findElement(driver, cartIcon).click();
+        driver.get("https://askomdch.com/cart/");
     }
 
     public int getCurrentItemsInCart(){
