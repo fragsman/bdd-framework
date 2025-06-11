@@ -1,4 +1,5 @@
-# bdd-framework
+![BDD Framework Logo](https://github.com/user-attachments/assets/427ab8c6-b3db-4f96-b6be-684fc0920c11)
+
 This is a Selenium BDD Automation framework just in case I need to use one quick and I don't want to be setting up all from scratch. 
 
 ## Technologies 👾
