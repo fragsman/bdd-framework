@@ -19,7 +19,7 @@ This is a Selenium BDD Automation framework just in case I need to use one quick
 
 ## Running Tests 🏃
 - Here you have two options
-- _Running with Maven:_ Download maven from the apache website. After you install it add adding the `bin` directory with the `mvn` command to the `PATH`. Then from the CMD ot Eclipse terminal run the following command "mvn clean test"
+- _Running with Maven:_ Download maven from the apache website. After you install it, add the `bin` directory fom maven, to the `PATH`. Then from the CMD ot Eclipse terminal run the following command `mvn clean test`
 - _Running with Eclipse:_ Download Eclipse and TestNG plugin. Right click on the testng.xml and select "Run with TestNG".
 - You will see the reports in `/target/results/cucumber-html-reports directory`.
 
